@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* General Styling for nice visuals */
+  body { font-family: sans-serif; padding: 20px; }
+  h1 { text-align: center; }
+  h2 { margin-top: 20px; }
+  
+  ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    overflow: hidden; /* Helps contain floats */
+  }
+
+  /* Common styling for all list items */
+  li {
+    padding: 10px 15px;
+    color: white;
+    margin-bottom: 5px; /* Spacing for block elements */
+  }
+
+  /* --- 1. BLOCK EXAMPLE (Blue) --- */
+  .block-nav li {
+    display: block;
+    background-color: #3498db; /* Blue */
+    border-bottom: 2px solid white;
+  }
+
+  /* --- 2. INLINE EXAMPLE (Green) --- */
+  .inline-nav li {
+    display: inline;
+    background-color: #2ecc71; /* Green */
+    /* Note: Margins/Padding behave differently here */
+  }
+
+  /* --- 3. INLINE-BLOCK EXAMPLE (Purple) --- */
+  .inline-block-nav li {
+    display: inline-block;
+    background-color: #9b59b6; /* Purple */
+    margin-right: 5px;
+    width: 100px; /* You can set width on inline-block */
+    text-align: center;
+  }
+
+  /* --- 4. FLOAT EXAMPLE (Orange) --- */
+  .float-nav li {
+    float: left;
+    background-color: #e67e22; /* Orange */
+    margin-right: 10px;
+    display: block; /* Floats behave like blocks regarding dimensions */
+    width: 100px;
+    text-align: center;
+  }
+
+</style>
+</head>
+<body>
+
+  <h1>Navigation Menu Demo</h1>
+
+  <h2>Block Example</h2>
+  <ul class="block-nav">
+    <li>Home</li>
+    <li>Products</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+
+  <h2>Inline Example</h2>
+  <ul class="inline-nav">
+    <li>Home</li>
+    <li>Products</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+
+  <h2>Inline-Block Example</h2>
+  <ul class="inline-block-nav">
+    <li>Home</li>
+    <li>Products</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+
+  <h2>Float Example</h2>
+  <ul class="float-nav">
+    <li>Home</li>
+    <li>Products</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+
+</body>
+</html>
